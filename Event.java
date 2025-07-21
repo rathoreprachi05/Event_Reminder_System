@@ -9,22 +9,22 @@ import java.time.LocalDate;
 
 public class Event{
     private String title;
-    private String Description;
+    private String description;
     private LocalDate date;
     private boolean isCompleted;
 
-    public Event(String title, String Description, LocalDate date){
+    public Event(String title, String description, LocalDate date){
         this.title = title;
-        this.Description = Description;
+        this.description = description;
         this.date = date;
         isCompleted = false;
     }
 
-    public String showTitle(){
+    public String getTitle(){
         return this.title;
     }
-    public String showDescription(){
-        return this.Description;
+    public String getDescription(){
+        return this.description;
     }
     public LocalDate getDate(){
         return this.date;
